@@ -35,6 +35,7 @@ export default function App(): ReactElement {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("Home");
+  
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -70,7 +71,7 @@ export default function App(): ReactElement {
                 return <Redirect to="/" />;
               }}
             />
-            <Route exact path="/startups" component={} />
+            <Route exact path="/startups" component={StartupList} />
           </Switch>
         </main>
       </div>
